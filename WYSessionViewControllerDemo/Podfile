@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#屏蔽第三方库警告
+inhibit_all_warnings!
+#use_frameworks!
+
+target 'WYSessionViewControllerDemo' do
+
+    pod 'Masonry'
+    pod 'UITableView+FDTemplateLayoutCell'
+end
