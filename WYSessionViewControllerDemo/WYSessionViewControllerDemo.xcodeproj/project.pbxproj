@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59140253200C490D0062DCFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140252200C490D0062DCFD /* AppDelegate.m */; };
+		59140256200C490D0062DCFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140255200C490D0062DCFD /* ViewController.m */; };
+		59140259200C490D0062DCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59140257200C490D0062DCFD /* Main.storyboard */; };
+		5914025B200C490D0062DCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5914025A200C490D0062DCFD /* Assets.xcassets */; };
+		5914025E200C490D0062DCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914025C200C490D0062DCFD /* LaunchScreen.storyboard */; };
+		59140261200C490D0062DCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140260200C490D0062DCFD /* main.m */; };
+		5914029B200C49510062DCFD /* WYImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914026B200C49510062DCFD /* WYImageMessageCell.m */; };
+		5914029C200C49510062DCFD /* WYLocationMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914026D200C49510062DCFD /* WYLocationMessageCell.m */; };
+		5914029D200C49510062DCFD /* WYMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914026F200C49510062DCFD /* WYMessageCell.m */; };
+		5914029E200C49510062DCFD /* WYTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140271200C49510062DCFD /* WYTextMessageCell.m */; };
+		5914029F200C49510062DCFD /* WYVoiceMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140273200C49510062DCFD /* WYVoiceMessageCell.m */; };
+		591402A0200C49510062DCFD /* WYEmojiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140276200C49510062DCFD /* WYEmojiBoardView.m */; };
+		591402A1200C49510062DCFD /* WYInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140278200C49510062DCFD /* WYInputTextView.m */; };
+		591402A2200C49510062DCFD /* WYPluginBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914027A200C49510062DCFD /* WYPluginBoardView.m */; };
+		591402A3200C49510062DCFD /* WYSessionInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914027C200C49510062DCFD /* WYSessionInputView.m */; };
+		591402A4200C49510062DCFD /* WYImageMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914027F200C49510062DCFD /* WYImageMessage.m */; };
+		591402A5200C49510062DCFD /* WYLocationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140281200C49510062DCFD /* WYLocationMessage.m */; };
+		591402A6200C49510062DCFD /* WYMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140283200C49510062DCFD /* WYMessage.m */; };
+		591402A7200C49510062DCFD /* WYMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140285200C49510062DCFD /* WYMessageContent.m */; };
+		591402A8200C49510062DCFD /* WYTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140287200C49510062DCFD /* WYTextMessage.m */; };
+		591402A9200C49510062DCFD /* WYUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140289200C49510062DCFD /* WYUserInfo.m */; };
+		591402AA200C49510062DCFD /* WYVoiceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914028B200C49510062DCFD /* WYVoiceMessage.m */; };
+		591402AC200C49510062DCFD /* WYVoicePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140290200C49510062DCFD /* WYVoicePlayer.m */; };
+		591402AD200C49510062DCFD /* WYVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140292200C49510062DCFD /* WYVoiceRecorder.m */; };
+		591402AE200C49510062DCFD /* WYVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140294200C49510062DCFD /* WYVoiceRecordHUD.m */; };
+		591402AF200C49510062DCFD /* WYLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59140296200C49510062DCFD /* WYLocationViewController.m */; };
+		591402B0200C49510062DCFD /* WYSession.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59140297200C49510062DCFD /* WYSession.bundle */; };
+		591402B1200C49510062DCFD /* WYSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914029A200C49510062DCFD /* WYSessionViewController.m */; };
+		A5022607B825B54F6E3E3578 /* libPods-WYSessionViewControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79571A9AC017F197D1EDD93F /* libPods-WYSessionViewControllerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36CB369E0DDAF7E051347F8A /* Pods-WYSessionViewControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYSessionViewControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYSessionViewControllerDemo/Pods-WYSessionViewControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5914024E200C490D0062DCFD /* WYSessionViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYSessionViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59140251200C490D0062DCFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59140252200C490D0062DCFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		59140254200C490D0062DCFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		59140255200C490D0062DCFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		59140258200C490D0062DCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5914025A200C490D0062DCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5914025D200C490D0062DCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5914025F200C490D0062DCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59140260200C490D0062DCFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5914026A200C49510062DCFD /* WYImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYImageMessageCell.h; sourceTree = "<group>"; };
+		5914026B200C49510062DCFD /* WYImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYImageMessageCell.m; sourceTree = "<group>"; };
+		5914026C200C49510062DCFD /* WYLocationMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLocationMessageCell.h; sourceTree = "<group>"; };
+		5914026D200C49510062DCFD /* WYLocationMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLocationMessageCell.m; sourceTree = "<group>"; };
+		5914026E200C49510062DCFD /* WYMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMessageCell.h; sourceTree = "<group>"; };
+		5914026F200C49510062DCFD /* WYMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMessageCell.m; sourceTree = "<group>"; };
+		59140270200C49510062DCFD /* WYTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTextMessageCell.h; sourceTree = "<group>"; };
+		59140271200C49510062DCFD /* WYTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTextMessageCell.m; sourceTree = "<group>"; };
+		59140272200C49510062DCFD /* WYVoiceMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYVoiceMessageCell.h; sourceTree = "<group>"; };
+		59140273200C49510062DCFD /* WYVoiceMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYVoiceMessageCell.m; sourceTree = "<group>"; };
+		59140275200C49510062DCFD /* WYEmojiBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYEmojiBoardView.h; sourceTree = "<group>"; };
+		59140276200C49510062DCFD /* WYEmojiBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYEmojiBoardView.m; sourceTree = "<group>"; };
+		59140277200C49510062DCFD /* WYInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYInputTextView.h; sourceTree = "<group>"; };
+		59140278200C49510062DCFD /* WYInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYInputTextView.m; sourceTree = "<group>"; };
+		59140279200C49510062DCFD /* WYPluginBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPluginBoardView.h; sourceTree = "<group>"; };
+		5914027A200C49510062DCFD /* WYPluginBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPluginBoardView.m; sourceTree = "<group>"; };
+		5914027B200C49510062DCFD /* WYSessionInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSessionInputView.h; sourceTree = "<group>"; };
+		5914027C200C49510062DCFD /* WYSessionInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSessionInputView.m; sourceTree = "<group>"; };
+		5914027E200C49510062DCFD /* WYImageMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYImageMessage.h; sourceTree = "<group>"; };
+		5914027F200C49510062DCFD /* WYImageMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYImageMessage.m; sourceTree = "<group>"; };
+		59140280200C49510062DCFD /* WYLocationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLocationMessage.h; sourceTree = "<group>"; };
+		59140281200C49510062DCFD /* WYLocationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLocationMessage.m; sourceTree = "<group>"; };
+		59140282200C49510062DCFD /* WYMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMessage.h; sourceTree = "<group>"; };
+		59140283200C49510062DCFD /* WYMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMessage.m; sourceTree = "<group>"; };
+		59140284200C49510062DCFD /* WYMessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMessageContent.h; sourceTree = "<group>"; };
+		59140285200C49510062DCFD /* WYMessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMessageContent.m; sourceTree = "<group>"; };
+		59140286200C49510062DCFD /* WYTextMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTextMessage.h; sourceTree = "<group>"; };
+		59140287200C49510062DCFD /* WYTextMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTextMessage.m; sourceTree = "<group>"; };
+		59140288200C49510062DCFD /* WYUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYUserInfo.h; sourceTree = "<group>"; };
+		59140289200C49510062DCFD /* WYUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYUserInfo.m; sourceTree = "<group>"; };
+		5914028A200C49510062DCFD /* WYVoiceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYVoiceMessage.h; sourceTree = "<group>"; };
+		5914028B200C49510062DCFD /* WYVoiceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYVoiceMessage.m; sourceTree = "<group>"; };
+		5914028F200C49510062DCFD /* WYVoicePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYVoicePlayer.h; sourceTree = "<group>"; };
+		59140290200C49510062DCFD /* WYVoicePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYVoicePlayer.m; sourceTree = "<group>"; };
+		59140291200C49510062DCFD /* WYVoiceRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYVoiceRecorder.h; sourceTree = "<group>"; };
+		59140292200C49510062DCFD /* WYVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYVoiceRecorder.m; sourceTree = "<group>"; };
+		59140293200C49510062DCFD /* WYVoiceRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYVoiceRecordHUD.h; sourceTree = "<group>"; };
+		59140294200C49510062DCFD /* WYVoiceRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYVoiceRecordHUD.m; sourceTree = "<group>"; };
+		59140295200C49510062DCFD /* WYLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLocationViewController.h; sourceTree = "<group>"; };
+		59140296200C49510062DCFD /* WYLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLocationViewController.m; sourceTree = "<group>"; };
+		59140297200C49510062DCFD /* WYSession.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WYSession.bundle; sourceTree = "<group>"; };
+		59140298200C49510062DCFD /* WYSessionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSessionMacro.h; sourceTree = "<group>"; };
+		59140299200C49510062DCFD /* WYSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSessionViewController.h; sourceTree = "<group>"; };
+		5914029A200C49510062DCFD /* WYSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSessionViewController.m; sourceTree = "<group>"; };
+		79571A9AC017F197D1EDD93F /* libPods-WYSessionViewControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYSessionViewControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BFF7CF0F50BE76934E0B20 /* Pods-WYSessionViewControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYSessionViewControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYSessionViewControllerDemo/Pods-WYSessionViewControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5914024B200C490D0062DCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5022607B825B54F6E3E3578 /* libPods-WYSessionViewControllerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59140245200C490C0062DCFD = {
+			isa = PBXGroup;
+			children = (
+				59140268200C49510062DCFD /* WYSessionViewController */,
+				59140250200C490D0062DCFD /* WYSessionViewControllerDemo */,
+				5914024F200C490D0062DCFD /* Products */,
+				A0C4724CF43440621368975C /* Pods */,
+				98C83B66F434CA9A3A732AC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5914024F200C490D0062DCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5914024E200C490D0062DCFD /* WYSessionViewControllerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59140250200C490D0062DCFD /* WYSessionViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				59140251200C490D0062DCFD /* AppDelegate.h */,
+				59140252200C490D0062DCFD /* AppDelegate.m */,
+				59140254200C490D0062DCFD /* ViewController.h */,
+				59140255200C490D0062DCFD /* ViewController.m */,
+				59140267200C49140062DCFD /* Resource */,
+			);
+			path = WYSessionViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		59140267200C49140062DCFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				59140257200C490D0062DCFD /* Main.storyboard */,
+				5914025A200C490D0062DCFD /* Assets.xcassets */,
+				5914025C200C490D0062DCFD /* LaunchScreen.storyboard */,
+				5914025F200C490D0062DCFD /* Info.plist */,
+				59140260200C490D0062DCFD /* main.m */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		59140268200C49510062DCFD /* WYSessionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59140298200C49510062DCFD /* WYSessionMacro.h */,
+				59140299200C49510062DCFD /* WYSessionViewController.h */,
+				5914029A200C49510062DCFD /* WYSessionViewController.m */,
+				59140295200C49510062DCFD /* WYLocationViewController.h */,
+				59140296200C49510062DCFD /* WYLocationViewController.m */,
+				591402B2200C49880062DCFD /* Resource */,
+				59140269200C49510062DCFD /* Cell */,
+				59140274200C49510062DCFD /* InputView */,
+				5914027D200C49510062DCFD /* Message */,
+				5914028E200C49510062DCFD /* Voice */,
+			);
+			path = WYSessionViewController;
+			sourceTree = "<group>";
+		};
+		59140269200C49510062DCFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5914026A200C49510062DCFD /* WYImageMessageCell.h */,
+				5914026B200C49510062DCFD /* WYImageMessageCell.m */,
+				5914026C200C49510062DCFD /* WYLocationMessageCell.h */,
+				5914026D200C49510062DCFD /* WYLocationMessageCell.m */,
+				5914026E200C49510062DCFD /* WYMessageCell.h */,
+				5914026F200C49510062DCFD /* WYMessageCell.m */,
+				59140270200C49510062DCFD /* WYTextMessageCell.h */,
+				59140271200C49510062DCFD /* WYTextMessageCell.m */,
+				59140272200C49510062DCFD /* WYVoiceMessageCell.h */,
+				59140273200C49510062DCFD /* WYVoiceMessageCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		59140274200C49510062DCFD /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				59140275200C49510062DCFD /* WYEmojiBoardView.h */,
+				59140276200C49510062DCFD /* WYEmojiBoardView.m */,
+				59140277200C49510062DCFD /* WYInputTextView.h */,
+				59140278200C49510062DCFD /* WYInputTextView.m */,
+				59140279200C49510062DCFD /* WYPluginBoardView.h */,
+				5914027A200C49510062DCFD /* WYPluginBoardView.m */,
+				5914027B200C49510062DCFD /* WYSessionInputView.h */,
+				5914027C200C49510062DCFD /* WYSessionInputView.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		5914027D200C49510062DCFD /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5914027E200C49510062DCFD /* WYImageMessage.h */,
+				5914027F200C49510062DCFD /* WYImageMessage.m */,
+				59140280200C49510062DCFD /* WYLocationMessage.h */,
+				59140281200C49510062DCFD /* WYLocationMessage.m */,
+				59140282200C49510062DCFD /* WYMessage.h */,
+				59140283200C49510062DCFD /* WYMessage.m */,
+				59140284200C49510062DCFD /* WYMessageContent.h */,
+				59140285200C49510062DCFD /* WYMessageContent.m */,
+				59140286200C49510062DCFD /* WYTextMessage.h */,
+				59140287200C49510062DCFD /* WYTextMessage.m */,
+				59140288200C49510062DCFD /* WYUserInfo.h */,
+				59140289200C49510062DCFD /* WYUserInfo.m */,
+				5914028A200C49510062DCFD /* WYVoiceMessage.h */,
+				5914028B200C49510062DCFD /* WYVoiceMessage.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		5914028E200C49510062DCFD /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				5914028F200C49510062DCFD /* WYVoicePlayer.h */,
+				59140290200C49510062DCFD /* WYVoicePlayer.m */,
+				59140291200C49510062DCFD /* WYVoiceRecorder.h */,
+				59140292200C49510062DCFD /* WYVoiceRecorder.m */,
+				59140293200C49510062DCFD /* WYVoiceRecordHUD.h */,
+				59140294200C49510062DCFD /* WYVoiceRecordHUD.m */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		591402B2200C49880062DCFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				59140297200C49510062DCFD /* WYSession.bundle */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		98C83B66F434CA9A3A732AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79571A9AC017F197D1EDD93F /* libPods-WYSessionViewControllerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0C4724CF43440621368975C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFF7CF0F50BE76934E0B20 /* Pods-WYSessionViewControllerDemo.debug.xcconfig */,
+				36CB369E0DDAF7E051347F8A /* Pods-WYSessionViewControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5914024D200C490D0062DCFD /* WYSessionViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59140264200C490D0062DCFD /* Build configuration list for PBXNativeTarget "WYSessionViewControllerDemo" */;
+			buildPhases = (
+				4F9A0A61B054556ED5B2C38C /* [CP] Check Pods Manifest.lock */,
+				5914024A200C490D0062DCFD /* Sources */,
+				5914024B200C490D0062DCFD /* Frameworks */,
+				5914024C200C490D0062DCFD /* Resources */,
+				3F55889CC39DE5570212EA1D /* [CP] Embed Pods Frameworks */,
+				06846BCB9BFFE420D500E0DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYSessionViewControllerDemo;
+			productName = WYSessionViewControllerDemo;
+			productReference = 5914024E200C490D0062DCFD /* WYSessionViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59140246200C490C0062DCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = YANGGL;
+				TargetAttributes = {
+					5914024D200C490D0062DCFD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 59140249200C490C0062DCFD /* Build configuration list for PBXProject "WYSessionViewControllerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59140245200C490C0062DCFD;
+			productRefGroup = 5914024F200C490D0062DCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5914024D200C490D0062DCFD /* WYSessionViewControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5914024C200C490D0062DCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591402B0200C49510062DCFD /* WYSession.bundle in Resources */,
+				5914025E200C490D0062DCFD /* LaunchScreen.storyboard in Resources */,
+				5914025B200C490D0062DCFD /* Assets.xcassets in Resources */,
+				59140259200C490D0062DCFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06846BCB9BFFE420D500E0DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYSessionViewControllerDemo/Pods-WYSessionViewControllerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F55889CC39DE5570212EA1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYSessionViewControllerDemo/Pods-WYSessionViewControllerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9A0A61B054556ED5B2C38C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYSessionViewControllerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5914024A200C490D0062DCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591402A1200C49510062DCFD /* WYInputTextView.m in Sources */,
+				591402A4200C49510062DCFD /* WYImageMessage.m in Sources */,
+				591402AD200C49510062DCFD /* WYVoiceRecorder.m in Sources */,
+				5914029E200C49510062DCFD /* WYTextMessageCell.m in Sources */,
+				591402B1200C49510062DCFD /* WYSessionViewController.m in Sources */,
+				59140256200C490D0062DCFD /* ViewController.m in Sources */,
+				591402A8200C49510062DCFD /* WYTextMessage.m in Sources */,
+				591402A0200C49510062DCFD /* WYEmojiBoardView.m in Sources */,
+				591402A2200C49510062DCFD /* WYPluginBoardView.m in Sources */,
+				5914029F200C49510062DCFD /* WYVoiceMessageCell.m in Sources */,
+				591402A3200C49510062DCFD /* WYSessionInputView.m in Sources */,
+				59140261200C490D0062DCFD /* main.m in Sources */,
+				591402A9200C49510062DCFD /* WYUserInfo.m in Sources */,
+				59140253200C490D0062DCFD /* AppDelegate.m in Sources */,
+				591402AF200C49510062DCFD /* WYLocationViewController.m in Sources */,
+				5914029D200C49510062DCFD /* WYMessageCell.m in Sources */,
+				5914029B200C49510062DCFD /* WYImageMessageCell.m in Sources */,
+				591402A5200C49510062DCFD /* WYLocationMessage.m in Sources */,
+				591402AC200C49510062DCFD /* WYVoicePlayer.m in Sources */,
+				591402A7200C49510062DCFD /* WYMessageContent.m in Sources */,
+				5914029C200C49510062DCFD /* WYLocationMessageCell.m in Sources */,
+				591402AE200C49510062DCFD /* WYVoiceRecordHUD.m in Sources */,
+				591402AA200C49510062DCFD /* WYVoiceMessage.m in Sources */,
+				591402A6200C49510062DCFD /* WYMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		59140257200C490D0062DCFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59140258200C490D0062DCFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5914025C200C490D0062DCFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5914025D200C490D0062DCFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59140262200C490D0062DCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59140263200C490D0062DCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59140265200C490D0062DCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BFF7CF0F50BE76934E0B20 /* Pods-WYSessionViewControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WYSessionViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnetoo.examvediomanager.WYSessionViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59140266200C490D0062DCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CB369E0DDAF7E051347F8A /* Pods-WYSessionViewControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WYSessionViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnetoo.examvediomanager.WYSessionViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59140249200C490C0062DCFD /* Build configuration list for PBXProject "WYSessionViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59140262200C490D0062DCFD /* Debug */,
+				59140263200C490D0062DCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59140264200C490D0062DCFD /* Build configuration list for PBXNativeTarget "WYSessionViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59140265200C490D0062DCFD /* Debug */,
+				59140266200C490D0062DCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59140246200C490C0062DCFD /* Project object */;
+}
